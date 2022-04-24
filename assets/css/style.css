@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('../fonts/fonts.css');
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -160,8 +160,9 @@ body.scale-cv{
   font-size: 1em;
 }
 
-.scale-cv a.cv__correo{
-  font-size: .9em;
+body.scale-cv a.cv__correo{
+  font-size: .7em;
+  font-weight: 900;
 }
 
 .scale-cv a.cv__ubica{
@@ -385,6 +386,10 @@ img{
 .home__data{
   gap: .5rem;
   text-align: center;
+}
+
+img{
+  pointer-events: none;
 }
 
 .home__img{
@@ -675,7 +680,7 @@ img{
   }
 
   .home__title{
-    font-size: 1.533em;
+    font-size: 1.4em;
   }
 
   .languages__content{
@@ -713,6 +718,10 @@ span.min__git{
   text-decoration: none;
   color: var(--text-color);
   margin-left: .5em;
+}
+
+.home__information > a.cv__correo{
+  font-size: .95em;
 }
 
 .home__information > i{

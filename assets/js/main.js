@@ -2,7 +2,7 @@
 
 /*==================== BLOCKEO CLICK DERECHO ====================*/
 function disableIE() {
-    if (document.all) {
+    if (document) {
         return false;
     }
 }
@@ -14,7 +14,7 @@ function disableNS(e) {
     }
 }
 if (document.layers) {
-    document.captureEvents(Event.MOUSEDOWN);
+    document(Event.MOUSEDOWN);
     document.onmousedown = disableNS;
 } 
 else {
